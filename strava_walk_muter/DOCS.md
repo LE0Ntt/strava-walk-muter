@@ -25,7 +25,24 @@ Die Strava-API bietet dafür kein Feld, und das Add-on versucht es auch nicht.
 Neue Strava-Apps laufen im „Single Player Mode“, sind also nur für dein eigenes
 Konto nutzbar. Für dieses Add-on genügt das.
 
-### 2. Ordner nach Home Assistant kopieren
+### 2. App nach Home Assistant bringen
+
+Es gibt zwei Wege. **Variante A** ist am einfachsten und liefert Updates
+automatisch. Mit **Variante B** kopierst du den Ordner von Hand.
+
+#### Variante A: über das GitHub-Repository
+
+1. **Einstellungen → Apps → App installieren** (öffnet den App Store).
+2. Oben rechts das Drei-Punkte-Menü → **„Repositories“**.
+3. `https://github.com/LE0Ntt/strava-walk-muter` eintragen → **Hinzufügen**.
+   Ist das Repository privat, muss der Supervisor darauf zugreifen können. Am
+   einfachsten stellst du es dafür auf öffentlich. Es enthält keine Geheimnisse.
+4. Im Store erscheint der Bereich **„Strava Walk Muter“**. Weiter mit Schritt 3,
+   Punkt 4. Schritt 2, Variante B, fällt weg.
+
+Neue Versionen erscheinen als Update, sobald `version` in `config.yaml` erhöht wird.
+
+#### Variante B: Ordner von Hand kopieren
 
 Home Assistant sucht selbst gebaute Apps im Ordner **`/local_apps`**. In
 älteren Versionen hieß er `/addons`. Der fertige Pfad lautet:

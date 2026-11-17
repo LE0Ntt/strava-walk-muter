@@ -6,8 +6,14 @@ stummschaltet (`hide_from_home`), damit sie nicht im Feed der Follower erscheine
 - App-Code und Doku: [`strava_walk_muter/`](strava_walk_muter/)
 - Einrichtung Schritt für Schritt: [`strava_walk_muter/DOCS.md`](strava_walk_muter/DOCS.md)
 
-Installation: den Ordner `strava_walk_muter` nach `/local_apps/` auf Home Assistant
-kopieren, dann im App Store „Nach Updates suchen“ und unter „Lokale Apps“ installieren.
+## Installation
+
+**Als Repository (empfohlen):** In Home Assistant **Einstellungen → Apps → App installieren**,
+oben rechts **⋮ → Repositories**, dann `https://github.com/LE0Ntt/strava-walk-muter` hinzufügen.
+Danach erscheint „Strava Walk Muter“ im App Store. Das Image wird beim Installieren auf dem Gerät gebaut.
+
+**Lokal:** den Ordner `strava_walk_muter` nach `/local_apps/` kopieren, dann im App Store
+„Nach Updates suchen“ und unter „Lokale Apps“ installieren.
 
 Tests:
 
