@@ -1,0 +1,30 @@
+name: Strava Walk Muter
+version: "1.0.0"
+slug: strava_walk_muter
+description: Blendet Strava-Spaziergänge automatisch aus dem Feed aus (hide_from_home)
+arch:
+  - aarch64
+  - amd64
+init: false
+startup: application
+boot: auto
+options:
+  client_id: ""
+  client_secret: ""
+  auth_code: ""
+  poll_interval_minutes: 15
+  lookback_hours: 48
+  sport_types:
+    - Walk
+  backfill: false
+  dry_run: true
+schema:
+  client_id: "str?"
+  client_secret: "password?"
+  auth_code: "str?"
+  poll_interval_minutes: "int(5,1440)"
+  lookback_hours: "int(1,720)"
+  sport_types:
+    - str
+  backfill: bool
+  dry_run: bool

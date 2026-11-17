@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+# lokale Testdaten enthalten echte Tokens und das Client Secret
+testdata/
+strava_walk_muter/testdata/
+.DS_Store
